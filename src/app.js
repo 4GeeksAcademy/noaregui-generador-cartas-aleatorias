@@ -23,7 +23,11 @@ let generateRandomNumber = () => {
     "K"
   ];
   let indexNumbers = Math.floor(Math.random() * numbers.length);
-  return numbers[indexNumbers];
+  let randomNumber = numbers[indexNumbers];
+  if (randomNumber === "☠️") {
+    alert("No has durado mucho 😏");
+  }
+  return randomNumber;
 };
 
 let generateRandomPalos = () => {
