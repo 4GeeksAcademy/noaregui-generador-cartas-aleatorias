@@ -6,14 +6,24 @@ body {
   background-image: url("Imagen/peakpx (2).jpg"); /* Establecer la ruta de la imagen local */
   background-size: cover;
   background-position: top center; /* Posicionar la imagen en el centro */
+  margin: 0;
+  padding: 0;
 }
 
+.background.image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("Imagen/peakpx (2).jpg");
+  background-size: cover;
+  background-position: top center;
+  z-index: -1; /* Asegura que esté detrás del contenido */
+}
 .container {
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #boton {
